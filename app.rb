@@ -16,8 +16,8 @@ end
 
 get "/contacts" do
   @contacts = Contact.all
-  render json: @contacts
-  #erb :index
+  #render json: @contacts
+  erb :index
 end
 
 get "/create" do
